@@ -11,10 +11,10 @@ router.get( '/:uuid',async(req,res)=>{
         }
         return res.render('download',{
             uuid:file.uuid,
-            fileName:file.fileName,
+            fileName:file.filename,
             fileSize: file.size,
         //Download link
-            download:`${process.env.APP_BASE_URL}/files/download/${file.uuid}`
+        downloadLink:`${process.env.APP_BASE_URL}/files/download/${file.uuid}`
          // Download link is attached in download button
         })
     }catch(error){
