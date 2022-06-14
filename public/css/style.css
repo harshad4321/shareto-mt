@@ -15,6 +15,13 @@
    color: #333;
  }
 
+ .logo2 {
+   position:absolute;
+  bottom:10px;
+   right: inherit;
+   width:300px;
+ }
+
  .logo {
    position: absolute;
    top: 10px;
@@ -22,11 +29,11 @@
    width: 150px;
  }
 section.download {
-   background: #fff;
+   background: rgba(28, 7, 7, 0.281);
    width: 430px;
    max-width: 90%;
    border-radius: 25px;
-   box-shadow: 0px 20px 20px 0px #00000017;
+   box-shadow: 0px 20px 20px 0px #29242448;
    padding: 2rem;
    text-align: center;
 }
