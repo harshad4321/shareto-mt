@@ -8,7 +8,7 @@ const filesSchema = new Schema({
     size:{type:Number,required:true},
     uuid:{type:String,required:true},
    sender:{type:String,required:false},
-  resiver:{type:String,required:false},
+   receiver:{type:String,required:false},
 },{ timestamps:true});
 
 module.exports=mongoose.model('File',filesSchema)
