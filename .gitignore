@@ -1,6 +1,6 @@
-.env
-node_modules
 
+.env
 uploads/*
 !uploads/.gitkeep
-.Ds_store
+node_modules
+.DS_Store
