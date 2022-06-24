@@ -6,7 +6,7 @@ const connectDB=require('./config/db');// DB connection
 require('dotenv').config()
 
 
-const notFound = require('./middleware/not-found')
+// const notFound = require('./middleware/not-found')
 //middleware
 
 
@@ -20,7 +20,7 @@ app.set('view engine','ejs');
 
 // Routes
 
-app.use(notFound)
+// app.use(notFound)
 
 app.use('/api/files',require('./routes/files'));
 app.use('/files',require('./routes/show')); 
