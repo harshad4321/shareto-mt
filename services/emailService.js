@@ -18,4 +18,4 @@ module.exports = async({from, to, subject, text, html})=>{
     html, // html body
 });
   console.log(info);
-}
+}  
