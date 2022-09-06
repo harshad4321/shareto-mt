@@ -4,11 +4,16 @@ const app = express();
 const path = require('path')
 const connectDB=require('./config/db');// DB connection
 require('dotenv').config()
+const cors = require('cors')
 
 
+
+const corsOptions = {
+    origin: process.env.ALLOWED_CLIENTS.split(',')
+  }
+  app.use(cors(corsOptions));
 
 //middleware
-
 
 
 app.use(express.json());
@@ -26,6 +31,9 @@ app.set('view engine','.ejs');
 // Routes
 
 
+app.use('/', require('./routes/home'))
+app.use('/uploaded-files', require('./routes/listing'))
+app.use('/cleanup', require('./routes/cleanup'))
 
 app.use('/api/files',require('./routes/files'));
 app.use('/files',require('./routes/show')); 
