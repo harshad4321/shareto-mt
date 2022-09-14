@@ -14,7 +14,7 @@ function formatBytes(bytes, decimals) {
 const random = new Date().getTime().toString(20);
 const salt = Buffer.from(random).toString('base64')
 const cleanUpLink = `${process.env.APP_BASE_URL}/cleanup?ts=${random}${salt}`;
-// const code = process.env.HIGH_SECURITY_CODE;
+const code = process.env.HIGH_SECURITY_CODE;
 
 router.get('/', async (req, res) => {
 
