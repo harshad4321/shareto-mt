@@ -1,4 +1,4 @@
-module.exports = ({emailFrom, downloadLink, size, expires}) => {
+module.exports = ({ emailFrom, downloadLink, size, expires }) => {
     return `
         <!doctype html>
             <html> 
@@ -152,9 +152,7 @@ module.exports = ({emailFrom, downloadLink, size, expires}) => {
                             </td>
                             </tr>
                             <tr>
-                            <td class="content-block powered-by" style="font-family: sans-serif; vertical-align: top; padding-bottom: 10px; padding-top: 10px; font-size: 12px; color: #999999; text-align: center;">
-                                Powered by <a href="https://www.youtube.com/channel/UCo9xTRmg1SqQ5JSsA2fAgJw" style="color: #999999; font-size: 12px; text-align: center; text-decoration: none;">Coders Gyan</a>.
-                            </td>
+                            
                             </tr>
                         </table>
                         </div>
